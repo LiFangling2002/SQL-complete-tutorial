@@ -18,3 +18,11 @@ SELECT *
 FROM sql_store.customers
 WHERE phone LIKE '%9';
 
+SELECT
+    prod_name,
+    prod_desc
+FROM
+    Products
+WHERE
+    prod_desc LIKE "%toy%carrots%"
+-- 同时出现toy和carrots，且有先后顺序
